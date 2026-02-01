@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Gradient definitions -->
+        <linearGradient id="tomatoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF5252;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FF1744;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#69F0AE;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00E676;stop-opacity:1" />
+        </linearGradient>
+        
+        <radialGradient id="shine" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.4" />
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+        </radialGradient>
+        
+        <!-- Glow filter for depth -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Background circle -->
+    <circle cx="128" cy="128" r="116" fill="url(#tomatoGradient)" filter="url(#shadow)" />
+    
+    <!-- Shine effect -->
+    <ellipse cx="90" cy="90" rx="70" ry="70" fill="url(#shine)" />
+    
+    <!-- Tomato shape with subtle texture -->
+    <path d="M128,40 C80,40 40,80 40,128 C40,176 80,216 128,216 C176,216 216,176 216,128 C216,80 176,40 128,40 Z" 
+          fill="url(#tomatoGradient)" stroke="#D32F2F" stroke-width="2" />
+    
+    <!-- Tomato crown/stem -->
+    <path d="M128,40 L140,20 L116,20 Z" fill="#5D4037" />
+    <ellipse cx="128" cy="40" rx="12" ry="6" fill="#5D4037" />
+    
+    <!-- Leaves -->
+    <path d="M140,40 C150,30 160,25 170,30 C165,35 160,40 150,45 C145,42 142,41 140,40 Z" 
+          fill="url(#leafGradient)" />
+    <path d="M116,40 C106,30 96,25 86,30 C91,35 96,40 106,45 C111,42 114,41 116,40 Z" 
+          fill="url(#leafGradient)" />
+    
+    <!-- Timer numbers with modern font style -->
+    <g transform="translate(128, 128)">
+        <!-- Clock face -->
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.3" />
+        
+        <!-- Minutes indicator (25) -->
+        <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" 
+              font-size="32" font-weight="bold" fill="#FFFFFF">
+            25
+        </text>
+        
+        <!-- Timer indicator -->
+        <path d="M0,-65 L0,-40" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        
+        <!-- Progress arc -->
+        <path d="M0,-65 A65,65 0 0,1 65,0" fill="none" stroke="#FFFFFF" stroke-width="4" 
+              stroke-linecap="round" stroke-dasharray="204,408" stroke-opacity="0.8" />
+        
+        <!-- Minute markers -->
+        <g stroke="#FFFFFF" stroke-width="2">
+            <line x1="0" y1="-75" x2="0" y2="-65" />
+            <line x1="53" y1="-53" x2="46" y2="-46" transform="rotate(45)" />
+            <line x1="75" y1="0" x2="65" y2="0" transform="rotate(90)" />
+            <line x1="53" y1="53" x2="46" y2="46" transform="rotate(135)" />
+        </g>
+    </g>
+    
+    <!-- Subtle decorative elements -->
+    <circle cx="80" cy="80" r="8" fill="#FFFFFF" fill-opacity="0.2" />
+    <circle cx="176" cy="176" r="6" fill="#FFFFFF" fill-opacity="0.2" />
+    <circle cx="176" cy="80" r="5" fill="#FFFFFF" fill-opacity="0.2" />
+    <circle cx="80" cy="176" r="7" fill="#FFFFFF" fill-opacity="0.2" />
+</svg>

@@ -1,0 +1,27 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=rtimer
+GenericName=Pomodoro Timer
+Comment=Beautiful terminal-based Pomodoro productivity timer
+Exec=konsole --hold --workdir ~ -e rtimer
+Icon=rtimer
+Terminal=false
+Categories=Qt;KDE;Utility;Office;Development;
+Keywords=pomodoro;timer;productivity;focus;terminal;
+StartupNotify=true
+StartupWMClass=konsole
+
+# KDE Plasma 5+ specific
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-KDE-StartupNotify=true
+X-DBUS-Service=org.kde.konsole
+X-DBUS-StartupType=Multi
+X-Plasma-NotificationArea=true
+X-KDE-Wayland-Interfaces=org_kde_plasma_window_management
+X-KDE-DBUS-Restricted-Interfaces=org_kde_plasma_window_management
+
+# For system tray integration (if you add it later)
+X-KDE-HasNotificationSupport=true
+X-KDE-ExtraNativeMenuItemTypes=SystemTrayIcon
