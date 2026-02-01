@@ -7,7 +7,7 @@ The project focuses on being minimal, fast, and easy to install.
 
 ---
 
-## ✨ Features
+##  Features
 
 - Simple timer utility
 - Written in Rust
@@ -22,10 +22,10 @@ The project focuses on being minimal, fast, and easy to install.
 Clone the repository:
 git clone https://github.com/akirathelinuxguy/rtimer.git
 
-Enter the folder
+Enter the folder:
 cd rtimer
 
-Install it 
+Install it:
 chmod +x install.sh
 sudo ./install.sh
 
