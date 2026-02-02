@@ -1,7 +1,7 @@
 # rtimer
 
-**rtimer** is a lightweight timer application written in **Rust**, designed for Linux desktops.  
-It includes simple install and uninstall scripts and desktop integration (KDE-friendly).
+**rtimer** is a lightweight pomodoro timer application written in **Rust**, designed for Linux desktops.  
+It includes simple install and uninstall scripts and desktop integration (KDE-first).
 
 The project focuses on being minimal, fast, and easy to install.
 
