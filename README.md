@@ -23,6 +23,7 @@ Clone the repository:
 
 
 git clone https://github.com/akirathelinuxguy/rtimer.git
+
 cd rtimer
 
 Build the project:
