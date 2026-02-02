@@ -1,14 +1,25 @@
 [package]
 name = "rtimer"
-version = "0.2.0"
-edition = "2021"
+version = "1.0.0"
+edition = "2024"
+authors = ["akirathelinuxguy"]
+description = "A beautiful terminal-based Pomodoro timer with statistics tracking"
+license = "GPLv3"
+repository = "https://github.com/akirathelinuxguy/rtimer"
+keywords = ["pomodoro", "timer", "productivity", "terminal", "tui"]
+categories = ["command-line-utilities"]
 
 [dependencies]
-ratatui = "0.26"
+clap = { version = "4.5", features = ["derive"] }
 crossterm = "0.27"
-clap = { version = "4.4", features = ["derive"] }
+ratatui = "0.26"
 notify-rust = "4.10"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 chrono = "0.4"
-dirs = "5.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
