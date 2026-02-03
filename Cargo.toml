@@ -3,7 +3,6 @@ name = "rtimer"
 version = "1.0.0"
 edition = "2024"
 authors = ["akirathelinuxguy"]
-description = "A beautiful terminal-based Pomodoro timer with statistics tracking"
 license = "GPLv3"
 repository = "https://github.com/akirathelinuxguy/rtimer"
 keywords = ["pomodoro", "timer", "productivity", "terminal", "tui"]
