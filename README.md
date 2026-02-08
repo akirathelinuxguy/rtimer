@@ -22,7 +22,7 @@ The project focuses on being minimal, fast, and easy to install.
 Clone the repository:
 
 
-git clone https://github.com/akirathelinuxguy/rtimer.git
+git clone https://github.com/Reuben-Percival/rtimer.git
 
 cd rtimer
 
@@ -51,7 +51,7 @@ rtimer
 
 Requirements:
 
-Rust (stable)
+Rust 
 
 Cargo
 
@@ -61,6 +61,6 @@ cargo run
 
 # License
 
-This project is licensed under the GNU General Public License v3.0.
+This project is licensed under the GNU General Public License v3.0 As it protects my project
 See the LICENSE file for details.
 
